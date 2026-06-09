@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>弹弹豆大作战</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="game" aria-label="弹弹豆大作战游戏画面"></canvas>
+
+      <section class="hud" aria-live="polite">
+        <div class="hud-left">
+          <span id="levelLabel">第 1 关</span>
+          <strong id="statusLabel">拖拽弹弓发射</strong>
+        </div>
+        <div class="hud-right">
+          <span id="ammoLabel">豆豆 x3</span>
+          <span id="scoreLabel">0</span>
+        </div>
+      </section>
+
+      <section id="overlay" class="overlay show">
+        <div class="panel">
+          <h1>弹弹豆大作战</h1>
+          <p>拖拽弹弓，松手发射，打倒所有坏罐头。</p>
+          <button id="startButton" type="button">开始游戏</button>
+        </div>
+      </section>
+
+      <div class="controls">
+        <button id="restartButton" type="button">重玩</button>
+        <button id="nextButton" type="button">下一关</button>
+      </div>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
